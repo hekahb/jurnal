@@ -12,8 +12,9 @@ public class Fibonaci {
         System.out.println("");
         System.out.println("Hasil : ");
         for(int i=1;i<=inp;i++){
-            System.out.print(fibonacciRecusion(i)+" ");
+            total=fibonacciRecusion(i)+total;
         }
+        System.out.println(total);
     }
     public static int fibonacciRecusion(int number){
         if(number == 1||number==2){
